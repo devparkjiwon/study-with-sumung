@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bodyGradWait" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#EDF4FC"/>
+      <stop offset="100%" stop-color="#D7E7F8"/>
+    </radialGradient>
+    <radialGradient id="antlerGradWait" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </radialGradient>
+    <radialGradient id="blushGradWait" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FDA4AF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FDA4AF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowWait" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E3A8A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadowWait)">
+    <!-- Antlers -->
+    <path d="M150 145 C140 100 120 75 95 65 C85 61 80 73 88 80 C105 95 118 115 125 145 Z" fill="url(#antlerGradWait)"/>
+    <path d="M112 88 C95 85 85 92 82 98 C80 103 89 105 95 102 C105 97 114 96 118 97 Z" fill="url(#antlerGradWait)"/>
+    <path d="M250 145 C260 100 280 75 305 65 C315 61 320 73 312 80 C295 95 282 115 275 145 Z" fill="url(#antlerGradWait)"/>
+    <path d="M288 88 C305 85 315 92 318 98 C320 103 311 105 305 102 C295 97 286 96 282 97 Z" fill="url(#antlerGradWait)"/>
+
+    <!-- Round Fluffy Ears -->
+    <ellipse cx="125" cy="180" rx="28" ry="32" transform="rotate(-20 125 180)" fill="#F0F6FD"/>
+    <ellipse cx="125" cy="180" rx="16" ry="20" transform="rotate(-20 125 180)" fill="#DBEAFE"/>
+    <ellipse cx="275" cy="180" rx="28" ry="32" transform="rotate(20 275 180)" fill="#F0F6FD"/>
+    <ellipse cx="275" cy="180" rx="16" ry="20" transform="rotate(20 275 180)" fill="#DBEAFE"/>
+
+    <!-- Main Body -->
+    <ellipse cx="200" cy="225" rx="115" ry="110" fill="url(#bodyGradWait)"/>
+
+    <!-- Gentle Expectant Eyes -->
+    <ellipse cx="160" cy="210" rx="13" ry="16" fill="#1E293B"/>
+    <circle cx="157" cy="205" r="5" fill="#FFFFFF"/>
+    <circle cx="163" cy="215" r="2.5" fill="#FFFFFF"/>
+    <ellipse cx="240" cy="210" rx="13" ry="16" fill="#1E293B"/>
+    <circle cx="237" cy="205" r="5" fill="#FFFFFF"/>
+    <circle cx="243" cy="215" r="2.5" fill="#FFFFFF"/>
+
+    <!-- Rosy Cheeks -->
+    <circle cx="140" cy="228" r="18" fill="url(#blushGradWait)"/>
+    <circle cx="260" cy="228" r="18" fill="url(#blushGradWait)"/>
+
+    <!-- Nose -->
+    <ellipse cx="200" cy="218" rx="4.5" ry="3.5" fill="#3B82F6"/>
+
+    <!-- Gentle Patient Mouth -->
+    <path d="M194 227 Q200 232 206 227" fill="none" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Holding a cute pastel stopwatch / timer -->
+    <g transform="translate(170, 275)">
+      <circle cx="30" cy="30" r="26" fill="#FFFFFF" stroke="#3B82F6" stroke-width="4"/>
+      <!-- Top button -->
+      <rect x="26" y="0" width="8" height="6" rx="2" fill="#3B82F6"/>
+      <!-- Watch hands -->
+      <line x1="30" y1="30" x2="30" y2="15" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+      <line x1="30" y1="30" x2="42" y2="30" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="30" cy="30" r="3.5" fill="#3B82F6"/>
+    </g>
+
+    <!-- Little Paws holding the clock -->
+    <ellipse cx="165" cy="305" rx="14" ry="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <ellipse cx="235" cy="305" rx="14" ry="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+  </g>
+</svg>

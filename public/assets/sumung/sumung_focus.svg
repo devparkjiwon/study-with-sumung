@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bodyGradFocus" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#EDF4FC"/>
+      <stop offset="100%" stop-color="#D7E7F8"/>
+    </radialGradient>
+    <radialGradient id="antlerGradFocus" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </radialGradient>
+    <radialGradient id="blushGradFocus" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FB7185" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FB7185" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowFocus" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E3A8A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadowFocus)">
+    <!-- Antlers -->
+    <path d="M150 145 C140 100 120 75 95 65 C85 61 80 73 88 80 C105 95 118 115 125 145 Z" fill="url(#antlerGradFocus)"/>
+    <path d="M112 88 C95 85 85 92 82 98 C80 103 89 105 95 102 C105 97 114 96 118 97 Z" fill="url(#antlerGradFocus)"/>
+    <path d="M250 145 C260 100 280 75 305 65 C315 61 320 73 312 80 C295 95 282 115 275 145 Z" fill="url(#antlerGradFocus)"/>
+    <path d="M288 88 C305 85 315 92 318 98 C320 103 311 105 305 102 C295 97 286 96 282 97 Z" fill="url(#antlerGradFocus)"/>
+
+    <!-- Round Fluffy Ears -->
+    <ellipse cx="125" cy="180" rx="28" ry="32" transform="rotate(-20 125 180)" fill="#F0F6FD"/>
+    <ellipse cx="125" cy="180" rx="16" ry="20" transform="rotate(-20 125 180)" fill="#DBEAFE"/>
+    <ellipse cx="275" cy="180" rx="28" ry="32" transform="rotate(20 275 180)" fill="#F0F6FD"/>
+    <ellipse cx="275" cy="180" rx="16" ry="20" transform="rotate(20 275 180)" fill="#DBEAFE"/>
+
+    <!-- Main Body -->
+    <ellipse cx="200" cy="225" rx="115" ry="110" fill="url(#bodyGradFocus)"/>
+
+    <!-- Cute Red Study Headband (열공 머리띠) -->
+    <path d="M96 185 C140 152 260 152 304 185 L300 200 C256 168 144 168 100 200 Z" fill="#EF4444"/>
+    <circle cx="200" cy="177" r="7" fill="#FBBF24"/>
+    <!-- Headband ribbons hanging on the side -->
+    <path d="M302 192 Q325 210 320 235 Q310 220 298 200 Z" fill="#EF4444"/>
+    <path d="M304 192 Q335 200 335 220 Q320 212 300 197 Z" fill="#DC2626"/>
+
+    <!-- Intense Focused Sparkle Eyes -->
+    <!-- Left Eye -->
+    <ellipse cx="160" cy="216" rx="14" ry="17" fill="#0F172A"/>
+    <polygon points="160,208 163,214 169,215 164,219 166,225 160,222 154,225 156,219 151,215 157,214" fill="#60A5FA"/>
+    <circle cx="157" cy="212" r="4.5" fill="#FFFFFF"/>
+    <!-- Right Eye -->
+    <ellipse cx="240" cy="216" rx="14" ry="17" fill="#0F172A"/>
+    <polygon points="240,208 243,214 249,215 244,219 246,225 240,222 234,225 236,219 231,215 237,214" fill="#60A5FA"/>
+    <circle cx="237" cy="212" r="4.5" fill="#FFFFFF"/>
+
+    <!-- Rosy Determined Cheeks -->
+    <circle cx="138" cy="235" r="19" fill="url(#blushGradFocus)"/>
+    <circle cx="262" cy="235" r="19" fill="url(#blushGradFocus)"/>
+
+    <!-- Nose -->
+    <ellipse cx="200" cy="225" rx="4.5" ry="3.5" fill="#2563EB"/>
+
+    <!-- Determined Focused Mouth -->
+    <path d="M194 233 Q200 238 206 233" fill="none" stroke="#0F172A" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Tiny Paws holding a cute pencil -->
+    <g transform="translate(140, 285) rotate(-15)">
+      <!-- Pencil -->
+      <rect x="20" y="5" width="80" height="14" rx="3" fill="#FBBF24"/>
+      <polygon points="100,5 115,12 100,19" fill="#FDE68A"/>
+      <polygon points="110,10 115,12 110,14" fill="#1E293B"/>
+      <rect x="10" y="5" width="10" height="14" fill="#FB7185"/>
+      <rect x="18" y="5" width="4" height="14" fill="#94A3B8"/>
+      <!-- Paws -->
+      <circle cx="35" cy="12" r="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+      <circle cx="85" cy="12" r="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    </g>
+
+    <!-- Study Sparkles around -->
+    <path d="M80 140 Q90 140 90 130 Q90 140 100 140 Q90 140 90 150 Q90 140 80 140 Z" fill="#F59E0B"/>
+    <path d="M315 130 Q325 130 325 120 Q325 130 335 130 Q325 130 325 140 Q325 130 315 130 Z" fill="#3B82F6"/>
+  </g>
+</svg>

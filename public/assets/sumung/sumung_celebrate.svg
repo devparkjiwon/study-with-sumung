@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bodyGradCeleb" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#EDF4FC"/>
+      <stop offset="100%" stop-color="#D7E7F8"/>
+    </radialGradient>
+    <radialGradient id="antlerGradCeleb" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </radialGradient>
+    <radialGradient id="blushGradCeleb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#F43F5E" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowCeleb" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E3A8A" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadowCeleb)">
+    <!-- Confetti & Stars in Background -->
+    <polygon points="60,85 64,96 76,96 66,103 70,114 60,107 50,114 54,103 44,96 56,96" fill="#FBBF24"/>
+    <polygon points="340,90 344,100 355,100 346,107 350,117 340,110 330,117 334,107 325,100 336,100" fill="#EC4899"/>
+    <circle cx="80" cy="140" r="5" fill="#3B82F6"/>
+    <circle cx="320" cy="145" r="6" fill="#10B981"/>
+    <circle cx="100" cy="65" r="4" fill="#8B5CF6"/>
+    <circle cx="300" cy="65" r="5" fill="#F59E0B"/>
+
+    <!-- Antlers -->
+    <path d="M150 145 C140 100 120 75 95 65 C85 61 80 73 88 80 C105 95 118 115 125 145 Z" fill="url(#antlerGradCeleb)"/>
+    <path d="M112 88 C95 85 85 92 82 98 C80 103 89 105 95 102 C105 97 114 96 118 97 Z" fill="url(#antlerGradCeleb)"/>
+    <path d="M250 145 C260 100 280 75 305 65 C315 61 320 73 312 80 C295 95 282 115 275 145 Z" fill="url(#antlerGradCeleb)"/>
+    <path d="M288 88 C305 85 315 92 318 98 C320 103 311 105 305 102 C295 97 286 96 282 97 Z" fill="url(#antlerGradCeleb)"/>
+
+    <!-- Cute Party Hat (파티 모자) -->
+    <polygon points="200,55 175,130 225,130" fill="#F59E0B"/>
+    <path d="M178 120 L222 120 L220 128 L180 128 Z" fill="#EF4444"/>
+    <path d="M185 100 L215 100 L212 108 L188 108 Z" fill="#3B82F6"/>
+    <circle cx="200" cy="50" r="8" fill="#FDE047"/>
+
+    <!-- Round Fluffy Ears perked up happily -->
+    <ellipse cx="120" cy="175" rx="28" ry="32" transform="rotate(-15 120 175)" fill="#F0F6FD"/>
+    <ellipse cx="120" cy="175" rx="16" ry="20" transform="rotate(-15 120 175)" fill="#DBEAFE"/>
+    <ellipse cx="280" cy="175" rx="28" ry="32" transform="rotate(15 280 175)" fill="#F0F6FD"/>
+    <ellipse cx="280" cy="175" rx="16" ry="20" transform="rotate(15 280 175)" fill="#DBEAFE"/>
+
+    <!-- Main Body bouncing up -->
+    <ellipse cx="200" cy="225" rx="115" ry="110" fill="url(#bodyGradCeleb)"/>
+
+    <!-- Starry Joyous Eyes (Happy Curved Eyes ^_^) -->
+    <path d="M145 208 Q160 192 175 208" fill="none" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M225 208 Q240 192 255 208" fill="none" stroke="#0F172A" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Rosy Happy Cheeks -->
+    <circle cx="136" cy="226" r="20" fill="url(#blushGradCeleb)"/>
+    <circle cx="264" cy="226" r="20" fill="url(#blushGradCeleb)"/>
+
+    <!-- Nose -->
+    <ellipse cx="200" cy="214" rx="4.5" ry="3.5" fill="#2563EB"/>
+
+    <!-- Joyful Wide Open Smile :D -->
+    <path d="M185 224 Q200 252 215 224 Z" fill="#E11D48"/>
+    <path d="M190 236 Q200 252 210 236 Z" fill="#FDA4AF"/>
+
+    <!-- Arms Raised in Celebration Yay! \o/ -->
+    <ellipse cx="115" cy="220" rx="16" ry="22" transform="rotate(-40 115 220)" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.5"/>
+    <ellipse cx="285" cy="220" rx="16" ry="22" transform="rotate(40 285 220)" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.5"/>
+  </g>
+</svg>

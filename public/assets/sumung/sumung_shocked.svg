@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bodyGradShock" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="85%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    <radialGradient id="antlerGradShock" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </radialGradient>
+    <radialGradient id="blushGradShock" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F87171" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F87171" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadowShock" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadowShock)">
+    <!-- Antlers vibrating / shivering -->
+    <path d="M148 143 C136 98 114 74 88 64 C78 60 74 72 82 79 C100 94 114 114 122 143 Z" fill="url(#antlerGradShock)"/>
+    <path d="M106 87 C89 84 79 91 76 97 C74 102 83 104 89 101 C99 96 108 95 112 96 Z" fill="url(#antlerGradShock)"/>
+    <path d="M252 143 C264 98 286 74 312 64 C322 60 326 72 318 79 C300 94 286 114 278 143 Z" fill="url(#antlerGradShock)"/>
+    <path d="M294 87 C311 84 321 91 324 97 C326 102 317 104 311 101 C301 96 292 95 288 96 Z" fill="url(#antlerGradShock)"/>
+
+    <!-- Round Fluffy Ears drooping slightly -->
+    <ellipse cx="120" cy="186" rx="28" ry="32" transform="rotate(-30 120 186)" fill="#F0F6FD"/>
+    <ellipse cx="120" cy="186" rx="16" ry="20" transform="rotate(-30 120 186)" fill="#DBEAFE"/>
+    <ellipse cx="280" cy="186" rx="28" ry="32" transform="rotate(30 280 186)" fill="#F0F6FD"/>
+    <ellipse cx="280" cy="186" rx="16" ry="20" transform="rotate(30 280 186)" fill="#DBEAFE"/>
+
+    <!-- Main Body slightly squished in shock -->
+    <ellipse cx="200" cy="228" rx="118" ry="106" fill="url(#bodyGradShock)"/>
+
+    <!-- Sweat drop on head -->
+    <path d="M125 150 C125 140 135 130 135 125 C135 130 145 140 145 150 C145 158 136 162 125 150 Z" fill="#38BDF8"/>
+
+    <!-- HUGE SURPRISED EYES (Eyes popped open!) -->
+    <!-- Left Eye -->
+    <circle cx="155" cy="206" r="22" fill="#FFFFFF" stroke="#0F172A" stroke-width="4"/>
+    <ellipse cx="155" cy="206" rx="7" ry="9" fill="#0F172A"/>
+    <circle cx="153" cy="203" r="3" fill="#FFFFFF"/>
+    <!-- Right Eye -->
+    <circle cx="245" cy="206" r="22" fill="#FFFFFF" stroke="#0F172A" stroke-width="4"/>
+    <ellipse cx="245" cy="206" rx="7" ry="9" fill="#0F172A"/>
+    <circle cx="243" cy="203" r="3" fill="#FFFFFF"/>
+
+    <!-- Shocked Blushing / Flustered -->
+    <circle cx="132" cy="235" r="20" fill="url(#blushGradShock)"/>
+    <circle cx="268" cy="235" r="20" fill="url(#blushGradShock)"/>
+
+    <!-- Nose -->
+    <ellipse cx="200" cy="216" rx="4" ry="3" fill="#2563EB"/>
+
+    <!-- Big Open O-Mouth in Shock :O -->
+    <ellipse cx="200" cy="242" rx="14" ry="18" fill="#BE123C"/>
+    <ellipse cx="200" cy="248" rx="9" ry="8" fill="#FB7185"/>
+
+    <!-- Paws clutching cheeks in disbelief! -->
+    <circle cx="128" cy="242" r="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="3"/>
+    <circle cx="272" cy="242" r="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="3"/>
+
+    <!-- Exclamation Marks Pop (❗ 👀) -->
+    <g transform="translate(182, 45)">
+      <rect x="13" y="10" width="10" height="30" rx="5" fill="#EF4444"/>
+      <circle cx="18" cy="50" r="5" fill="#EF4444"/>
+    </g>
+    <!-- Shock lines -->
+    <line x1="75" y1="185" x2="60" y2="180" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+    <line x1="78" y1="205" x2="62" y2="210" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+    <line x1="325" y1="185" x2="340" y2="180" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+    <line x1="322" y1="205" x2="338" y2="210" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

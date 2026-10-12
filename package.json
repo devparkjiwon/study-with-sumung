@@ -1,0 +1,43 @@
+{
+  "name": "study-with-mung",
+  "version": "1.0.0",
+  "description": "상명대학교 수뭉이와 함께하는 시험기간 집중 타이머 - 스터디윗뭉",
+  "main": "dist-electron/main.js",
+  "author": "Sangmyung University Student Developer",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"npm run dev:electron\"",
+    "dev:electron": "wait-on tcp:5173 && npm run build:electron && electron .",
+    "build:electron": "esbuild electron/main.ts electron/preload.ts --platform=node --format=cjs --outdir=dist-electron --bundle --external:electron",
+    "build:renderer": "vite build",
+    "build": "npm run build:renderer && npm run build:electron",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^1.16.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.1",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^6.0.2",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^34.2.0",
+    "esbuild": "^0.25.0",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "wait-on": "^8.0.2"
+  }
+}
